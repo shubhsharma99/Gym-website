@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image:Url("https://img2.goodfon.com/wallpaper/nbig/4/ff/muscles-bodybuilder-shtanga.jpg") ;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .left{
+            
+            display: inline block;
+            text-align: center;
+            position: absolute;
+            margin: 10px;
+            margin-top: 0;
+        }
+        .left p {
+            color: rgb(247, 247, 247);
+            font-size: medium;
+            font-style: bold;
+        }
+        .left img {
+            background-color: rgb(37, 39, 39);
+            width: 70px;
+            filter: invert(100%);
+        }
+        .mid {
+            text-align: center;
+            display: block;
+            width: 50%;
+            margin: auto;
+        }
+        .right {
+            display: inline-block;
+            position: absolute;
+            top: 8px;
+            right: 10px;
+            margin: 5px;
+           
+        }
+        .navbar{
+            
+            margin: 20px 0px;
+        }
+
+        .navbar li{
+            border-radius: 10px;
+            font-size: 30px;
+            display: inline-table;
+            padding: 0px 12px;
+            margin: 7px;
+
+        }
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+        }
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: #ca5216;
+            cursor: pointer;
+        }
+        .btn {
+            color: rgb(245, 96, 3);
+            background-color: #000000;
+            font-size: 17px;
+            margin: 10px 10px;
+            padding: 2px 10px;
+            border-radius: 17px;
+        }
+        .btn :hover {
+            cursor:pointer;
+            color: black;
+        }
+        .container {
+            font-size: 40px;
+            margin: 80px 90px 0 90px;
+            padding: 10px 30px 0 30px;
+        }
+
+
+        h1{
+            font-style: italic ;
+            font-size: 30px;
+            color: rgb(255, 111, 0);
+        }
+        h2{
+            font-size: larger;
+            font-style: italic;
+            color: aliceblue;
+        }
+        div.gallery {
+            border: 1px solid rgb(0, 0, 0);
+            font-size: larger;
+            
+        }
+
+        div.gallery:hover {
+            border: 2px solid rgb(196, 51, 6);
+            
+        }
+
+        div.gallery img {
+            
+            width: 100%;
+            height: 100px;
+            
+        }
+
+        div.desc {
+           padding: 15px;
+           text-align: center;
+        }
+
+        * {
+           box-sizing: border-box;
+        }
+
+        .responsive {
+           padding: 0 6px;
+           float: left;
+           width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 500px) {
+          .responsive {
+           width: 49.99999%;
+           margin: 6px 0;
+      
+        }
+    }
+
+        @media only screen and (max-width: 500px) {
+         .responsive {
+          width: 100%;
+        }
+    }
+
+        .clearfix:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        form{
+            position: absolute;
+            left: 80%;
+            top: 40%;
+            color: rgb(255, 77, 0);
+            font-size: large;
+            font-style: italic;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header left">
+            <div>
+                <img src="https://i.pinimg.com/736x/42/9d/63/429d631659a11a9eb666b103d811470a.jpg">
+            </div>
+            <p>Warrior fitness club </p>
+        </div>
+        <div class="header mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">services</a></li>
+            </ul>
+        </div>
+        <div class="header right">
+            <button class="btn">contact us</button>
+            <button class="btn">Email us </button>
+        </div>
+    </header>
+    <div class="container">
+    </br>
+        <h1>Join the best gym of lalitpur now !!</h1>
+        <h2> Hurry up guys !! </h2>
+        <form action="/action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br><br>
+            <input type="submit" value="Submit">
+          </form> 
+
+
+
+        </br>
+      </br>
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="https://www.shape.com/fitness/cardio/cardio-workouts-gym">
+                <img src="https://images.ctfassets.net/90pc6zknij8o/1WtL84wxXFkoSWdyzXoG63/135323357dbb46c36f1b7e6c553af156/couple_workout_russian_twist-e1534943074352.jpg?w=913&h=600&q=50&fit=fill&f=faces" alt="Cinque Terre" width="600" height="300">
+              </a>
+              
+            </div>
+          </div>
+          
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="https://www.shape.com/fitness/workouts/yoga-poses-loosen-your-traps-neck-and-shoulders">
+                <img src="https://www.shape.com/thmb/L2Z1fDKO_uaawVLOjRYZIOyeVSs=/364x242/filters:no_upscale():max_bytes(150000):strip_icc():focal(499x0:501x2):format(webp)/img_3959_0-e43318a2859a408cb028490c11221bed.jpg" alt="Forest" width="600" height="300">
+              </a>
+              
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="https://barbend.com/what-is-amrap/">
+                <img src="https://barbend.com/wp-content/uploads/2022/03/BarBend-Feature-Image-1200-x-675-56.jpg" alt="Cardio" width="600" height="300">
+              </a>
+              
+            </div>
+          </div>
+          
+          <div class="responsive">
+            <div class="gallery">
+              <a target="_blank" href="https://www.shape.com/fitness/cardio/cardio-workouts-gym">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDR1OyrTNq8ek4vT9nny8TC-JpDYp8wsnZ6g&usqp=CAU" alt="zumba" width="600" height="300">
+              </a>
+              
+            </div>
+          </div>
+          
+          <div class="clearfix"></div>
+          
+          <div style="padding:6px;">
+          </div>
+
+            </header>
+     </body>
+</html>
