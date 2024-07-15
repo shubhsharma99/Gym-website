@@ -1,35 +1,33 @@
-name: Build and Deploy
+name: CI/CD for react App
 
 on:
   push:
-    branches:
-      - main
+    branches: [main]
 
 jobs:
-  build:
+  build_and_deploy:
     runs-on: ubuntu-latest
-
-    strategy:
-      matrix:
-        node-version: [20]
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version : 18
+      
+      - name: Install dependencies
+        run: npm install
 
+      - name: Build project
+        run: npm run build
+        
       - name: Configure AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v2
+        uses: aws-actions/configure-aws-credentials@v1
         with:
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws-region: us-east-1
+         aws-access-key-id: ${{secret.AKIA3FLD3MJEVRGLB3WR}}
+         aws-secret-access-key: ${{secrets.TEdyT953WKDFv0RYlvVNjVDjmJfIC4CNlNjeO+j4}}
+         aws-region: us-east-1
 
-      - name: Deploy static site to S3 bucket
-        run: |
-          echo "Deploying to S3..."
-          aws s3 sync build/ s3://react-4737 --delete
+         -name : deploy static site to s3 bucket 
+         run : aws s3 sync . s3://react-4737 --delete
